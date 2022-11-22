@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego | 1.0</title>
+  <link rel="stylesheet" href="Tos.css">
+  <link href="http://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>¿PIEDRA, PAPEL O TIJERA?</h1>
+    </nav>
+  </header>
+  <div class="container-fluid cards" id="Principal">
+    <div class="card">
+      <div class="titulo">
+        <h3 class="espaciotu">TU</h3><h3 id="puntajeTu">0</h3>
+        <P>&nbsp;:&nbsp;</P>
+        <h3 id="puntajePc">0<h3 class="espaciopc">PC</h3>
+      </div>
+      <div class="cardJuego">
+        <button class="btn piedra" id="piedra"></button>
+        <button class="btn papel" id="papel"></button>
+        <button class="btn tijera" id="tijera"></button>
+      </div>
+
+      <div class="informacion">
+        <h1>Elige una opción</h1>
+        <h1 id="win1">--Ohh has empatado--</h1>
+        <h1 id="win2">--Ohh has empatado--</h1>
+        <h1 id="win3">--Ohh has empatado--</h1>
+
+        <h1 id="over1">--Ohh has perdido--</h1>
+        <h1 id="over2">--Ohh has perdido--</h1>
+        <h1 id="over3">--Ohh has perdido--</h1>
+
+        <h1 id="winer1">--Ohh has ganado--</h1>
+        <h1 id="winer2">--Ohh has ganado--</h1>
+        <h1 id="winer3">--Ohh has ganado--</h1>
+      </div>
+
+      <div class="opcion1">
+        <div class="tuRespuesta" id="tuRespuesta">
+          <button class="btn piedra" id="piedra2"></button>
+          <button class="btn papel" id="papel2"></button>
+          <button class="btn tijera" id="tijera2"></button>
+        </div>
+
+        <h1 id="vs">TU vs PC</h1>
+
+        <button class="btn piedra" id="op1"></button>
+        <button class="btn papel" id="op2"></button>
+        <button class="btn tijera" id="op3"></button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
