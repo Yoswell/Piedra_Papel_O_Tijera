@@ -1,26 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Silkscreen&display=swap');
+
+* { font-family: 'Silkscreen', cursive; }
 
 body {
-  font-family: 'SF Pixelate', sans-serif;
-  background: #111113;
+  background: #111113 !important;
   height: 98vh;
   color: #fff;
 }
 
 header {
   width: 100%;
-}
-
-nav {
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #8cffa5;
   color: #111113;
 }
+
+header h1 { font-size:  2rem ;}
 
 #Principal {
   width: 100%;
@@ -45,8 +43,8 @@ nav {
   height: 70%;
   max-width: 700px;
   min-height: 700px;
-  background-color: #111113;
-  padding: 4rem 2rem;
+  background-color: #111113 !important;
+  border: none !important;
   transition: 0.3s;
   border-radius: 20px;
 }
@@ -89,56 +87,59 @@ nav {
 }
 
 .piedra {
-  background-image: url('img/piedra.png');
+  background-image: url('img/piedra.png') !important;
   background-repeat: no-repeat;
   background-size: 100px;
   background-position: 50%;
 }
 .papel {
-  background-image: url('img/papel.png');
+  background-image: url('img/papel.png') !important;
   background-repeat: no-repeat;
   background-size: 100px;
   background-position: 50%;
 }
 .tijera {
-  background-image: url("img/tijera.png");
+  background-image: url("img/tijera.png") !important;
   background-repeat: no-repeat;
   background-size: 100px;
   background-position: 50%;
 }
 
 .card .informacion {
-  position: relative;
   width: 100%;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  top: -10px;
   background-color: #18181a;
   border: 3px solid #111113;
   border-radius: 20px;
+  margin-top: -10px;
 }
 
 .informacion h1 {
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .opcion1 {
-  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #18181a;
   border: 3px solid #111113;
-  height: 300px;
+  height: 200px;
   border-radius: 20px;
 }
 
+.opcion1 h1 {
+  color: #fff;
+}
+
 .opcion1 .btn {
-  padding: 100px 100px;
+  padding: 50px 50px;
   cursor: pointer;
   background-color: #18181a;
   border: none;
@@ -164,7 +165,7 @@ nav {
 }
 
 .tuOpcion {
-  padding: 100px 100px;
+  padding: 50px 50px;
   background-color: #111113;
   border: none;
   background-image: url("/piedra.png");
@@ -175,40 +176,29 @@ nav {
 }
 
 @media (max-width: 700px) {
-
-  .titulo {
-    font-size: 0.8rem;
-  }
-
-  .card .cardJuego .btn {
-    width: 100%;
-  }
+  .titulo { font-size: 0.8rem; }
+  .card .cardJuego .btn { width: 100%; }
 
   .piedra {
-    background-image: url("/piedra.png");
+    background-image: url("img/piedra.png");
     background-repeat: no-repeat;
     background-size: 80px;
     background-position: 50%;
   }
   .papel {
-    background-image: url("/papel.png");
+    background-image: url("img/papel.png");
     background-repeat: no-repeat;
     background-size: 80px;
     background-position: 50%;
   }
   .tijera {
-    background-image: url("/tijera.png");
+    background-image: url("img/tijera.png");
     background-repeat: no-repeat;
     background-size: 80px;
     background-position: 50%;
   }
 
-  #vs {
-    font-size: 1rem;
-  }
-
-  .opcion1 .btn {
-    padding: 60px 60px;
-  }
-  
+  #vs { font-size: 1rem; }
+ .informacion h1 { font-size: 1.2rem; }
+  .opcion1 .btn { padding: 60px 60px; }
 }
