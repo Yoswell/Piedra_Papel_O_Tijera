@@ -3,22 +3,12 @@
 * { font-family: 'Silkscreen', cursive; }
 
 body {
-  background: #111113 !important;
-  height: 98vh;
-  color: #fff;
-}
-
-header {
-  width: 100%;
-  height: 80px;
+  background: #562e40 !important;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #8cffa5;
-  color: #111113;
+  color: #fff;
 }
-
-header h1 { font-size:  2rem ;}
 
 #Principal {
   width: 100%;
@@ -43,7 +33,7 @@ header h1 { font-size:  2rem ;}
   height: 70%;
   max-width: 700px;
   min-height: 700px;
-  background-color: #111113 !important;
+  background-color: #562e40 !important;
   border: none !important;
   transition: 0.3s;
   border-radius: 20px;
@@ -55,7 +45,7 @@ header h1 { font-size:  2rem ;}
   justify-content: center;
   width: 50%;
   height: 50px;
-  background-color: #8cffa5;
+  background-color: #ae6072;
   font-size: 1.2rem;
   border-radius: 20px;
   color: #111113;
@@ -81,9 +71,11 @@ header h1 { font-size:  2rem ;}
   width: 100%;
   height: 150px;
   cursor: pointer;
-  background-color: #18181a;
-  border: 3px solid #111113;
+  background-color: #ae6072;
+  border: 3px solid #562e40;
   border-radius: 20px;
+} .card .cardJuego .btn:focus {
+  border: 3px solid #562e40;
 }
 
 .piedra {
@@ -112,8 +104,8 @@ header h1 { font-size:  2rem ;}
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #18181a;
-  border: 3px solid #111113;
+  background-color: #ae6072;
+  border: 3px solid #562e40;
   border-radius: 20px;
   margin-top: -10px;
 }
@@ -128,8 +120,8 @@ header h1 { font-size:  2rem ;}
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #18181a;
-  border: 3px solid #111113;
+  background-color: #ae6072;
+  border: 3px solid #562e40;
   height: 200px;
   border-radius: 20px;
 }
@@ -141,7 +133,7 @@ header h1 { font-size:  2rem ;}
 .opcion1 .btn {
   padding: 50px 50px;
   cursor: pointer;
-  background-color: #18181a;
+  background-color: #ae6072;
   border: none;
 }
 
